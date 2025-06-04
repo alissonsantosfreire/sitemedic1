@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Suhellen Penaforte | Alergia e Imunologia Clínica</title>
+    <meta name="description" content="Dra. Suhellen Penaforte - Alergia e Imunologia Clínica em Icó e Juazeiro do Norte, Ceará. Tratamento de doenças alérgicas e deficiências imunológicas.">
+    <meta name="keywords" content="alergista Icó, imunologista Ceará, alergia, imunologia, testes alérgicos, imunoterapia">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3e261f',
+                        secondary: '#92764d',
+                        tertiary: '#65473d',
+                        accent: '#c4b08a',
+                        dark: '#2a1914',
+                        light: '#f8f5f0',
+                        footer: '#b69779'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Proteção contra download de imagens */
+        img {
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-touch-callout: none;
+            position: relative;
+        }
+        
+        img::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+        }
+        
+        /* Desabilitar menu de contexto */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(62, 38, 31, 0.95), rgba(146, 118, 77, 0.85));
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Padr%C3%A3o%20do%20fundo.svg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.05;
+            z-index: 1;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .location-card:hover {
+            border-color: #92764d;
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(146, 118, 77, 0.4);
+        }
+        
+        .instagram-post:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease forwards;
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        
+        /* Menu Mobile */
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        /* Scroll Progress Bar */
+        .progress-bar {
+            height: 3px;
+            background: linear-gradient(to right, #3e261f, #92764d);
+            width: 0%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            transition: width 0.2s ease;
+        }
+        
+        /* Logo */
+        .logo-container {
+            height: 50px;
+        }
+        
+        .logo-container img {
+            height: 100%;
+            width: auto;
+        }
+        
+        .footer-logo {
+            height: 70px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-container {
+                height: 40px;
+            }
+            
+            .footer-logo {
+                height: 60px;
+            }
+        }
+        
+        /* Instagram Button */
+        .instagram-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .instagram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(220, 39, 67, 0.3);
+        }
+        
+        /* Estilo para o fundo das seções CTA */
+        .cta-section-bg {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Padr%C3%A3o%20do%20fundo.svg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.05;
+            z-index: 1;
+        }
+        
+        /* Gradiente para ícones do footer */
+        .footer-gradient-text {
+            background: linear-gradient(to right, #b69779, #d8c0a9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .footer-gradient-icon {
+            background: linear-gradient(to right, #b69779, #d8c0a9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Estilo melhorado para o botão grande do Instagram */
+        .instagram-big-btn {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(220, 39, 67, 0.25);
+        }
+        
+        .instagram-big-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(220, 39, 67, 0.35);
+        }
+        
+        /* Correção para o ícone do Instagram no footer */
+        .footer-social-icon {
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-social-icon i {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+        }
+        
+        /* Classe específica para o texto do Instagram no footer (sem gradiente) */
+        .footer-instagram-text {
+            color: white;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-instagram-text:hover {
+            color: #92764d;
+        }
+        
+        /* Modal de Agendamento */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background-color: white;
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 2rem;
+            position: relative;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #3e261f;
+            transition: color 0.3s ease;
+        }
+        
+        .modal-close:hover {
+            color: #92764d;
+        }
+        
+        .location-option {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .location-option:hover {
+            border-color: #92764d;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(146, 118, 77, 0.1);
+        }
+    </style>
+    
+    <!-- Schema.org markup para médicos -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dra. Suhellen Penaforte",
+      "medicalSpecialty": "Alergia e Imunologia Clínica",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Francisco Maciel, nº 2414, Centro",
+          "addressLocality": "Icó",
+          "addressRegion": "Ceará",
+          "addressCountry": "BR"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Josefa Nogueira Monteiro, 1640 - Centro",
+          "addressLocality": "Icó",
+          "addressRegion": "Ceará",
+          "addressCountry": "BR"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Catulo da Paixão Cearense, nº 135, Condomínio Central Park, Sala 205, 2º andar, Triângulo",
+          "addressLocality": "Juazeiro do Norte",
+          "addressRegion": "Ceará",
+          "addressCountry": "BR"
+        }
+      ],
+      "url": "https://www.drasuhellenpenaforte.com.br",
+      "sameAs": ["https://www.instagram.com/dra.suhellenpenaforte/"]
+    }
+    </script>
+</head>
+<body class="font-sans text-dark bg-light">
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+    
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center logo-container">
+                <img src="https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Logo%20topo.svg" alt="Logo Dra. Suhellen Penaforte" class="h-full">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#sobre" class="text-dark hover:text-secondary transition-colors">Sobre</a>
+                <a href="#locais" class="text-dark hover:text-secondary transition-colors">Locais</a>
+                <a href="#servicos" class="text-dark hover:text-secondary transition-colors">Atendimento</a>
+                <a href="#contato" class="text-dark hover:text-secondary transition-colors">Contato</a>
+                <button class="schedule-btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary transition-colors cta-button flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Agendar Consulta
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-dark focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 h-full w-3/4 bg-white shadow-lg z-50 p-5">
+            <div class="flex justify-between items-center mb-8">
+                <div class="logo-container">
+                    <img src="https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Logo%20topo.svg" alt="Logo Dra. Suhellen Penaforte" class="h-full">
+                </div>
+                <button id="close-menu" class="text-dark focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#sobre" class="text-dark hover:text-secondary transition-colors py-2 border-b border-gray-100">Sobre</a>
+                <a href="#locais" class="text-dark hover:text-secondary transition-colors py-2 border-b border-gray-100">Locais</a>
+                <a href="#servicos" class="text-dark hover:text-secondary transition-colors py-2 border-b border-gray-100">Atendimento</a>
+                <a href="#contato" class="text-dark hover:text-secondary transition-colors py-2 border-b border-gray-100">Contato</a>
+                <button class="schedule-btn bg-secondary text-white px-4 py-3 rounded-full hover:bg-primary transition-colors mt-4 text-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Agendar Consulta
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center relative cta-section-bg" style="background-image: url('https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Padr%C3%A3o%20do%20fundo.svg')">
+        <div class="hero-gradient absolute inset-0 opacity-90"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col-reverse md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0 animate-slideInLeft">
+                    <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4">
+                        <em class="font-bold">Dra. Suhellen Penaforte</em>
+                    </h2>
+                    <p class="text-white text-lg md:text-xl mb-8">
+                        Cuidado personalizado para o tratamento de doenças alérgicas e imunológicas.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <!-- Botões reordenados: primeiro Conheça os Serviços, depois Agendar Consulta -->
+                        <a href="#servicos" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-primary transition-colors font-medium cta-button flex items-center justify-center">
+                            <i class="fas fa-stethoscope mr-2"></i> Conheça os Serviços
+                        </a>
+                        <button class="schedule-btn bg-white text-primary px-6 py-3 rounded-full hover:bg-secondary hover:text-white transition-colors font-medium cta-button flex items-center justify-center animate-pulse">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar Consulta
+                        </button>
+                        <!-- Novo botão de Suporte e Orientações -->
+                        <button class="support-btn bg-secondary text-white px-6 py-3 rounded-full hover:bg-white hover:text-primary transition-colors font-medium cta-button flex items-center justify-center" data-number="5588998167777">
+                            <i class="fas fa-headset mr-2"></i> Suporte e Orientações
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end animate-slideInRight">
+                    <div class="w-full max-w-md">
+                        <img src="https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Foto%201.png" alt="Dra. Suhellen Penaforte" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locais de Atendimento Section (Movido para segunda posição) -->
+    <section id="locais" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 animate-fadeIn">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">
+                    Locais de <span class="text-secondary">Atendimento</span>
+                </h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg max-w-2xl mx-auto">
+                    A Dra. Suhellen Penaforte atende em três locais diferentes para sua comodidade.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Local 1 -->
+                <div class="border border-gray-200 rounded-lg p-6 transition-all duration-300 location-card hover:shadow-lg animate-fadeIn delay-100">
+                    <div class="mb-4">
+                        <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse">
+                            <i class="fas fa-hospital text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-center">MEDICAL SAN LORENZO</h3>
+                    </div>
+                    <div class="mb-6">
+                        <p class="flex items-start mb-3">
+                            <i class="fas fa-map-marker-alt text-secondary mr-3 mt-1"></i>
+                            <span>Rua Francisco Maciel, nº 2414, Centro, Icó – Ceará</span>
+                        </p>
+                        <p class="flex items-center mb-3">
+                            <i class="fas fa-phone-alt text-secondary mr-3"></i>
+                            <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588998696619">(88) 99869-6619</button>
+                        </p>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <button class="whatsapp-btn block bg-primary text-white text-center px-4 py-3 rounded-lg hover:bg-secondary transition-colors cta-button" data-number="5588998696619">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar no Medical San Lorenzo
+                        </button>
+                        <button class="maps-btn block bg-secondary text-white text-center px-4 py-3 rounded-lg hover:bg-primary transition-colors cta-button" data-location="https://g.co/kgs/ad5zTYE">
+                            <i class="fas fa-map-marked-alt mr-2"></i> Como Chegar
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Local 2 -->
+                <div class="border border-gray-200 rounded-lg p-6 transition-all duration-300 location-card hover:shadow-lg animate-fadeIn delay-200">
+                    <div class="mb-4">
+                        <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse">
+                            <i class="fas fa-hospital text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-center">CLINDI</h3>
+                    </div>
+                    <div class="mb-6">
+                        <p class="flex items-start mb-3">
+                            <i class="fas fa-map-marker-alt text-secondary mr-3 mt-1"></i>
+                            <span>Avenida Josefa Nogueira Monteiro, 1640 - Centro, Icó - CE, 63430-000</span>
+                        </p>
+                        <p class="flex items-center mb-3">
+                            <i class="fas fa-phone-alt text-secondary mr-3"></i>
+                            <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588994198871">(88) 99419-8871</button>
+                        </p>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <button class="whatsapp-btn block bg-primary text-white text-center px-4 py-3 rounded-lg hover:bg-secondary transition-colors cta-button" data-number="5588994198871">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar na Clindi
+                        </button>
+                        <button class="maps-btn block bg-secondary text-white text-center px-4 py-3 rounded-lg hover:bg-primary transition-colors cta-button" data-location="https://maps.app.goo.gl/3NBzFrKuqv1cVW1t6">
+                            <i class="fas fa-map-marked-alt mr-2"></i> Como Chegar
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Local 3 -->
+                <div class="border border-gray-200 rounded-lg p-6 transition-all duration-300 location-card hover:shadow-lg animate-fadeIn delay-300">
+                    <div class="mb-4">
+                        <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse">
+                            <i class="fas fa-hospital text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-center">EVOLUTÉ CLINIC</h3>
+                    </div>
+                    <div class="mb-6">
+                        <p class="flex items-start mb-3">
+                            <i class="fas fa-map-marker-alt text-secondary mr-3 mt-1"></i>
+                            <span>Rua Catulo da Paixão Cearense, nº 135, Condomínio Central Park, Sala 205, 2º andar, Triângulo, Juazeiro do Norte – Ceará</span>
+                        </p>
+                        <p class="flex items-center mb-3">
+                            <i class="fas fa-phone-alt text-secondary mr-3"></i>
+                            <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588988228087">(88) 98822-8087</button>
+                        </p>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <button class="whatsapp-btn block bg-primary text-white text-center px-4 py-3 rounded-lg hover:bg-secondary transition-colors cta-button" data-number="5588988228087">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar na Evoluté Clinic
+                        </button>
+                        <button class="maps-btn block bg-secondary text-white text-center px-4 py-3 rounded-lg hover:bg-primary transition-colors cta-button" data-location="https://g.co/kgs/Zt1AffQ">
+                            <i class="fas fa-map-marked-alt mr-2"></i> Como Chegar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section (Movido para terceira posição) -->
+    <section id="sobre" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Imagem aparece primeiro no mobile -->
+                <div class="md:w-2/5 mb-8 md:mb-0 order-first md:order-first animate-slideInLeft">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Foto%202.png" alt="Dra. Suhellen Penaforte" class="w-full h-auto">
+                    </div>
+                </div>
+                <div class="md:w-3/5 md:pl-12 animate-slideInRight">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-primary">
+                        Sobre a <span class="text-secondary">Dra. Suhellen Penaforte</span>
+                    </h2>
+                    <div class="w-20 h-1 bg-secondary mb-6"></div>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Atuando na área de Alergia e Imunologia Clínica, a Dra. Suhellen Penaforte dedica-se ao diagnóstico e tratamento de doenças alérgicas e imunológicas, oferecendo cuidado personalizado e de excelência aos seus pacientes.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Dra. Suhellen atua no tratamento de diversas condições, como rinite alérgica, asma, dermatite atópica, urticária, alergias alimentares e medicamentosas, além de imunodeficiências.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="text-secondary mr-3">
+                                <i class="fas fa-user-md text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Formação Médica</h3>
+                                <p>Medicina</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-secondary mr-3">
+                                <i class="fas fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Experiência</h3>
+                                <p>Atendimento clínico especializado</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-secondary mr-3">
+                                <i class="fas fa-book-medical text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Atualização</h3>
+                                <p>Constante aprimoramento profissional</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-secondary mr-3">
+                                <i class="fas fa-stethoscope text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Atendimentos</h3>
+                                <p>Alergia e Imunologia Clínica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 animate-fadeIn">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">
+                    Sobre meu <span class="text-secondary">Atendimento</span>
+                </h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg max-w-2xl mx-auto">
+                    Oferecemos atendimento para diagnóstico e tratamento de diversas condições alérgicas e imunológicas.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 service-card animate-fadeIn delay-100">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6 mx-auto animate-pulse">
+                        <i class="fas fa-lungs text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Doenças Alérgicas em Geral</h3>
+                    <p class="text-center mb-6">
+                        Diagnóstico e tratamento de rinite alérgica, asma, dermatite atópica, urticária, alergias alimentares e medicamentosas.
+                    </p>
+                    <div class="text-center">
+                        <button class="schedule-btn inline-block text-secondary hover:text-primary transition-colors">
+                            <span class="border-b border-secondary">Saiba mais</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Serviço 2 (Removido Deficiências Imunológicas) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 service-card animate-fadeIn delay-200">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6 mx-auto animate-pulse">
+                        <i class="fas fa-virus-slash text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Infecções de Repetição</h3>
+                    <p class="text-center mb-6">
+                        Investigação e tratamento de pacientes com quadros recorrentes de infecções respiratórias, cutâneas e sistêmicas.
+                    </p>
+                    <div class="text-center">
+                        <button class="schedule-btn inline-block text-secondary hover:text-primary transition-colors">
+                            <span class="border-b border-secondary">Saiba mais</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Serviço 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 service-card animate-fadeIn delay-300">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6 mx-auto animate-pulse">
+                        <i class="fas fa-vial text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Testes Alérgicos</h3>
+                    <p class="text-center mb-6">
+                        Realização de testes cutâneos para identificação de alérgenos específicos, auxiliando no diagnóstico preciso.
+                    </p>
+                    <div class="text-center">
+                        <button class="schedule-btn inline-block text-secondary hover:text-primary transition-colors">
+                            <span class="border-b border-secondary">Saiba mais</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Serviço 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 service-card animate-fadeIn delay-400">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mb-6 mx-auto animate-pulse">
+                        <i class="fas fa-syringe text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Imunoterapia</h3>
+                    <p class="text-center mb-6">
+                        Tratamento específico para dessensibilização alérgica, reduzindo sintomas e melhorando a qualidade de vida.
+                    </p>
+                    <div class="text-center">
+                        <button class="schedule-btn inline-block text-secondary hover:text-primary transition-colors">
+                            <span class="border-b border-secondary">Saiba mais</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Serviço 5 - Orientações e Suporte (Atualizado) -->
+                <div class="bg-primary rounded-lg shadow-lg p-6 transition-all duration-300 animate-fadeIn delay-500 cta-section-bg relative">
+                    <div class="relative z-10 h-full flex flex-col items-center justify-center text-white">
+                        <h3 class="text-xl font-bold mb-4 text-center">Orientações e Suporte</h3>
+                        <p class="text-center mb-6">
+                            Precisa de orientações sobre seu tratamento ou tem dúvidas? Entre em contato diretamente com a Dra. Suhellen.
+                        </p>
+                        <button class="support-btn bg-white text-primary px-6 py-3 rounded-full hover:bg-secondary hover:text-white transition-colors font-medium cta-button flex items-center justify-center animate-pulse" data-number="5588998167777">
+                            <i class="fas fa-headset mr-2"></i> Suporte e Orientações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section (Botão Estilizado) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 animate-fadeIn">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">
+                    Siga no <span class="text-secondary">Instagram</span>
+                </h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg max-w-2xl mx-auto mb-8">
+                    Acompanhe @dra.suhellenpenaforte e fique por dentro de dicas e informações sobre saúde alérgica e imunológica.
+                </p>
+            </div>
+            
+            <!-- Botão de Instagram maior e centralizado -->
+            <div class="max-w-xl mx-auto animate-fadeIn">
+                <button class="instagram-btn instagram-big-btn block text-white text-center px-6 py-5 rounded-lg shadow-lg transition-all duration-300" data-profile="dra.suhellenpenaforte">
+                    <div class="flex items-center justify-center">
+                        <i class="fab fa-instagram text-4xl mr-5"></i>
+                        <div class="text-left">
+                            <p class="text-sm font-light">Siga no Instagram</p>
+                            <p class="text-xl font-bold">@dra.suhellenpenaforte</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-cover bg-center relative cta-section-bg">
+        <div class="hero-gradient absolute inset-0 opacity-90"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between">
+                <!-- Invertido para mobile: imagem primeiro, texto depois -->
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0 animate-slideInLeft">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-white italic">
+                        Cuide da sua saúde com quem entende
+                    </h2>
+                    <p class="text-lg text-white mb-8">
+                        Agende sua consulta com a Dra. Suhellen Penaforte e dê o primeiro passo para uma vida com mais qualidade e bem-estar.
+                    </p>
+                    <button class="schedule-btn inline-block bg-white text-primary px-8 py-4 rounded-full hover:bg-secondary hover:text-white transition-colors font-medium text-lg cta-button animate-pulse">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar Consulta pelo WhatsApp
+                    </button>
+                </div>
+                <div class="md:w-2/5 animate-slideInRight mb-8 md:mb-0">
+                    <div>
+                        <img src="https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Foto%203.png" alt="Dra. Suhellen Penaforte" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-dark text-white py-12 relative">
+        <div class="absolute inset-0 bg-dark opacity-95 z-0"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Coluna 1 -->
+                <div class="flex justify-center md:justify-start">
+                    <div class="footer-logo mb-6">
+                        <img src="https://raw.githubusercontent.com/alissonsantosfreire/webimages/refs/heads/main/Logo%20final.svg" alt="Logo Dra. Suhellen Penaforte" class="h-full">
+                    </div>
+                </div>
+                
+                <!-- Coluna 2 -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-6 footer-gradient-text">
+                        Locais de Atendimento
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt footer-gradient-icon mr-3 mt-1"></i>
+                            <div>
+                                <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588998696619">Medical San Lorenzo - Icó</button>
+                                <p class="text-sm text-gray-400">(88) 99869-6619</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt footer-gradient-icon mr-3 mt-1"></i>
+                            <div>
+                                <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588994198871">Clindi - Icó</button>
+                                <p class="text-sm text-gray-400">(88) 99419-8871</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt footer-gradient-icon mr-3 mt-1"></i>
+                            <div>
+                                <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588988228087">Evoluté Clinic - Juazeiro do Norte</button>
+                                <p class="text-sm text-gray-400">(88) 98822-8087</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3 - Instagram com texto branco normal (sem gradiente) -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-6 footer-gradient-text">
+                        Contato
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="footer-social-icon">
+                            <i class="fab fa-whatsapp footer-gradient-icon mr-3 text-2xl"></i>
+                            <button class="whatsapp-btn hover:text-secondary transition-colors" data-number="5588998167777">
+                                (88) 9.9816-7777
+                            </button>
+                        </div>
+                        <div class="footer-social-icon">
+                            <i class="fab fa-instagram footer-gradient-icon mr-3 text-2xl"></i>
+                            <button class="footer-instagram-text hover:text-secondary transition-colors" data-profile="dra.suhellenpenaforte">
+                                @dra.suhellenpenaforte
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 Dra. Suhellen Penaforte - Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <button class="schedule-btn fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50 animate-pulse">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </button>
+
+    <!-- Modal de Agendamento -->
+    <div id="schedule-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal" class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="text-2xl font-bold text-primary mb-6 text-center">Escolha um Local para Agendar</h3>
+            <p class="text-center mb-6 text-gray-600">Selecione uma das clínicas abaixo para agendar sua consulta com a Dra. Suhellen Penaforte.</p>
+            
+            <!-- Opções de Locais -->
+            <div class="space-y-4">
+                <!-- Local 1 -->
+                <div class="location-option">
+                    <h4 class="font-bold text-lg mb-2">Medical San Lorenzo - Icó</h4>
+                    <p class="text-gray-600 mb-4">Rua Francisco Maciel, nº 2414, Centro, Icó – Ceará</p>
+                    <button class="whatsapp-btn w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors" data-number="5588998696619">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar via WhatsApp
+                    </button>
+                </div>
+                
+                <!-- Local 2 -->
+                <div class="location-option">
+                    <h4 class="font-bold text-lg mb-2">Clindi - Icó</h4>
+                    <p class="text-gray-600 mb-4">Avenida Josefa Nogueira Monteiro, 1640 - Centro, Icó - CE</p>
+                    <button class="whatsapp-btn w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors" data-number="5588994198871">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar via WhatsApp
+                    </button>
+                </div>
+                
+                <!-- Local 3 -->
+                <div class="location-option">
+                    <h4 class="font-bold text-lg mb-2">Evoluté Clinic - Juazeiro do Norte</h4>
+                    <p class="text-gray-600 mb-4">Rua Catulo da Paixão Cearense, nº 135, Condomínio Central Park, Sala 205, 2º andar, Triângulo</p>
+                    <button class="whatsapp-btn w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition-colors" data-number="5588988228087">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Desabilitar menu de contexto para evitar download de imagens
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Desabilitar arrastar imagens
+        document.addEventListener('dragstart', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+        
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight * 100;
+            document.querySelector('.progress-bar').style.width = scrollPercent + '%';
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('animate-fadeIn')) {
+                        entry.target.style.opacity = '1';
+                    }
+                    if (entry.target.classList.contains('animate-slideInLeft')) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                    if (entry.target.classList.contains('animate-slideInRight')) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        // Função para abrir links em nova aba de forma segura
+        function openInNewTab(url) {
+            // Cria um elemento <a> temporário
+            const link = document.createElement('a');
+            link.href = url;
+            
+            // Define atributos para abrir em nova aba
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+            
+            // Adiciona o link ao DOM, clica nele e depois remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+        // Modal de Agendamento
+        const scheduleModal = document.getElementById('schedule-modal');
+        const closeModalButton = document.getElementById('close-modal');
+        const scheduleButtons = document.querySelectorAll('.schedule-btn');
+        
+        // Abrir modal
+        scheduleButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                scheduleModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Impedir rolagem do body
+            });
+        });
+        
+        // Fechar modal
+        closeModalButton.addEventListener('click', () => {
+            scheduleModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restaurar rolagem do body
+        });
+        
+        // Fechar modal ao clicar fora
+        scheduleModal.addEventListener('click', (e) => {
+            if (e.target === scheduleModal) {
+                scheduleModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Inicializar animações e manipuladores de eventos
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-fadeIn').forEach(el => {
+                el.style.opacity = '0';
+                observer.observe(el);
+            });
+            
+            document.querySelectorAll('.animate-slideInLeft').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateX(-30px)';
+                observer.observe(el);
+            });
+            
+            document.querySelectorAll('.animate-slideInRight').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateX(30px)';
+                observer.observe(el);
+            });
+            
+            // Manipulador para botões do WhatsApp
+            document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const number = this.getAttribute('data-number');
+                    const message = "Olá! Gostaria de agendar uma consulta com a Dra. Suhellen Penaforte.";
+                    const encodedMessage = encodeURIComponent(message);
+                    const url = `https://wa.me/${number}?text=${encodedMessage}`;
+                    
+                    // Fechar o modal se estiver aberto
+                    scheduleModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                    
+                    // Usar nossa função para abrir em nova aba
+                    openInNewTab(url);
+                });
+            });
+            
+            // Manipulador para botões de Suporte e Orientações
+            document.querySelectorAll('.support-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const number = this.getAttribute('data-number');
+                    const message = "Olá Dra. Suhellen! Gostaria de obter algumas orientações sobre meu tratamento.";
+                    const encodedMessage = encodeURIComponent(message);
+                    const url = `https://wa.me/${number}?text=${encodedMessage}`;
+                    
+                    // Usar nossa função para abrir em nova aba
+                    openInNewTab(url);
+                });
+            });
+            
+            // Manipulador para botões do Instagram (incluindo o texto normal no footer)
+            document.querySelectorAll('.instagram-btn, .footer-instagram-text').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const profile = this.getAttribute('data-profile');
+                    const url = `https://www.instagram.com/${profile}/`;
+                    
+                    // Usar nossa função para abrir em nova aba
+                    openInNewTab(url);
+                });
+            });
+            
+            // Manipulador para botões do Google Maps
+            document.querySelectorAll('.maps-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const location = this.getAttribute('data-location');
+                    
+                    // Usar nossa função para abrir em nova aba
+                    openInNewTab(location);
+                });
+            });
+        });
+        
+        // Função adicional para prevenir download de imagens
+        function preventImageSave() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                // Adicionar camada transparente sobre a imagem
+                const parent = img.parentElement;
+                parent.style.position = 'relative';
+                
+                const overlay = document.createElement('div');
+                overlay.style.position = 'absolute';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.zIndex = '10';
+                overlay.style.backgroundColor = 'transparent';
+                
+                parent.appendChild(overlay);
+                
+                // Desabilitar eventos de teclado que podem ser usados para salvar
+                img.addEventListener('keydown', function(e) {
+                    if (e.key === 's' && (e.ctrlKey || e.metaKey)) {
+                        e.preventDefault();
+                        return false;
+                    }
+                });
+            });
+        }
+        
+        // Executar proteção de imagens após o carregamento da página
+        window.addEventListener('load', preventImageSave);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94a87966a5373183',t:'MTc0OTA1MTA1NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
